@@ -1,0 +1,14 @@
+<div class="container">
+  <h3 class="text-center">Contact Us</h3>
+  <%= form_for "/contacts" do |f| %>
+  <%= f.label :name %>
+  <%= f.text :name %>
+  
+  <%= f.label :email %>
+  <%= f.text :email %>
+  
+  <%= f.label :comments %>
+  <%= f.text_area :comments %>
+  
+  <%= f.submit 'Submit' %>
+</div>
